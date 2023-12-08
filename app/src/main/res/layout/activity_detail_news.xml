@@ -89,6 +89,7 @@
 
 
     <androidx.core.widget.NestedScrollView
+        android:id="@+id/nestedScrollView"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
@@ -107,7 +108,8 @@
         layout="@layout/loading_indicator"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        app:layout_anchorGravity="center" />
+        app:layout_anchor="@+id/nestedScrollView"
+        app:layout_anchorGravity="top|center" />
 
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
